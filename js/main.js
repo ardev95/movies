@@ -110,7 +110,7 @@ function do_search() {
     var keyword = $("#form-search-resp.lap #keyword").val();
     keyword = keyword.replace(/\s+/g, '-');
     if (keyword.length >= 2) {
-        window.location.href = '/search/' + urlencode(keyword);
+        window.location.href = '?search=' + urlencode(keyword);
     } else {
         //$("#form-search-resp #keyword").focus();
     }
@@ -122,7 +122,7 @@ function do_searchM() {
     var keyword = $("#form-search-resp.mobi #keyword").val();
     keyword = keyword.replace(/\s+/g, '-');
     if (keyword.length >= 2) {
-        window.location.href = '/search/' + urlencode(keyword);
+        window.location.href = '?search=' + urlencode(keyword);
     } else {
         //$("#form-search-resp #keyword").focus();
     }
